@@ -36,6 +36,10 @@ export default function BooksRead() {
           text: "Carl Jung",
           value: "Carl Jung",
         },
+        {
+          text: "Homer",
+          value: "Homer",
+        },
       ],
       onFilter: (value, record) => record.author.startsWith(value),
       filterSearch: true,
@@ -49,6 +53,14 @@ export default function BooksRead() {
           text: "2021",
           value: "2021",
         },
+        {
+          text: "2020",
+          value: "2020",
+        },
+        {
+          text: "2022",
+          value: "2022",
+        },
       ],
       onFilter: (value, record) => record.date.startsWith(value),
       filterSearch: true,
@@ -60,6 +72,20 @@ export default function BooksRead() {
       onFilter: (value, record) => record.topic.startsWith(value),
       filterSearch: true,
       width: "25%",
+      filters: [
+        {
+          text: "Psychology",
+          value: "Psychology",
+        },
+        {
+          text: "History",
+          value: "History",
+        },
+        {
+          text: "Religion",
+          value: "Religion",
+        },
+      ],
     },
     {
       title: "Rating",
