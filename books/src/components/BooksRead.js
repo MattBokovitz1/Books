@@ -23,6 +23,7 @@ export default function BooksRead() {
     {
       title: "Title",
       dataIndex: "title",
+      //render: (text) => <a>{text}</a>,
       filterMode: "tree",
       filterSearch: true,
       onFilter: (value, record) => record.title.includes(value),
