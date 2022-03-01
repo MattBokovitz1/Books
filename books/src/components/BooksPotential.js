@@ -24,6 +24,7 @@ export default function BooksPotential() {
       title: "Title",
       dataIndex: "title",
       filterMode: "tree",
+      // render: (text) => <a>{text}</a>,
       filterSearch: true,
       onFilter: (value, record) => record.title.includes(value),
       width: "40%",
@@ -33,8 +34,8 @@ export default function BooksPotential() {
       dataIndex: "author",
       filters: [
         {
-          text: "Homer",
-          value: "Homer",
+          text: "CS Lewis",
+          value: "CS Lewis",
         },
       ],
       onFilter: (value, record) => record.author.startsWith(value),
